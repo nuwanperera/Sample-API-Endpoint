@@ -4,6 +4,7 @@ import json
 import os
 
 app = Flask(__name__)
+app.config['JSON_SORT_KEYS'] = False
 
 def cast_to_type(val, cast_type):
     # Special case to handle milliseconds
@@ -27,11 +28,11 @@ def transform_request():
         return jsonify(null=None)
 
     req = request.get_json()
-    print(req)
     response = {}
     # We know that these are always going to be passed in the request
     response["source"] = req['deviceId']
-    response["timestamp"] = int(datetime.fromisoformat(req['timestamp']).timestamp())
+    # Epoch timestamp in milliseconds
+    response["timestamp"] = int(datetime.fromisoformat(req['timestamp']).timestamp())*1000
     response["data"] = {}
 
     # Let's get rid of device id and timestamp before continuing - this is an O(1) operation in Python
