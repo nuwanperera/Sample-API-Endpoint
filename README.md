@@ -18,7 +18,8 @@ Refer to `setup.sh` to run app with dependencies installed. The setup script is 
  "readingA": 212.0,
  "readingB": "high",
  "activated": "2020-01-02T03:42:55"
-}```
+}
+```
 
 **Output**:
 
@@ -42,5 +43,6 @@ Refer to `setup.sh` to run app with dependencies installed. The setup script is 
             "datetime": 1577954575000
         }
     }
-}```
+}
+```
 
