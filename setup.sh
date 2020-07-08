@@ -1,4 +1,3 @@
-#!/bin/
 # Setup script for pip installations - run on Python3
 
 pip install flask
