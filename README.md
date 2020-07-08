@@ -12,7 +12,8 @@ Refer to `setup.sh` to run app with dependencies installed. The setup script is 
 
 ## Example
 **Input**:
-```{
+```
+{
  "deviceId": "sensor-1",
  "timestamp": "2020-01-02T03:45:00",
  "readingA": 212.0,
@@ -23,7 +24,8 @@ Refer to `setup.sh` to run app with dependencies installed. The setup script is 
 
 **Output**:
 
-```{
+```
+{
     "source": "sensor-1",
     "timestamp": 1577954700000,
     "data": {
