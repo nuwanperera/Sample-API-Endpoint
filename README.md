@@ -10,7 +10,7 @@ Flask Version: `Flask 1.1.2`
 
 Refer to `setup.sh` to run app with dependencies installed. The setup script is developed to run on macOS or Linux systems.
 
-## Examples
+## Example
 **Input**:
 ```{
  "deviceId": "sensor-1",
