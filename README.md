@@ -5,24 +5,27 @@
 
  ## Package Dependencies / Technical Description
 
-Python Version: `Python 3.8.3`
+Python Version: `Python 3.8.3` </br>
 Flask Version: `Flask 1.1.2`
 
 Refer to `setup.sh` to run app with dependencies installed. The setup script is developed to run on macOS or Linux systems.
 
-## Examples
+## Example
 **Input**:
-```{
+```
+{
  "deviceId": "sensor-1",
  "timestamp": "2020-01-02T03:45:00",
  "readingA": 212.0,
  "readingB": "high",
  "activated": "2020-01-02T03:42:55"
-}```
+}
+```
 
 **Output**:
 
-```{
+```
+{
     "source": "sensor-1",
     "timestamp": 1577954700000,
     "data": {
@@ -42,5 +45,6 @@ Refer to `setup.sh` to run app with dependencies installed. The setup script is 
             "datetime": 1577954575000
         }
     }
-}```
+}
+```
 
